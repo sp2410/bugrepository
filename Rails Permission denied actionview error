@@ -1,0 +1,13 @@
+ActionView::Template::Error (Permission denied @ rb_sysopen - ../cache/assets/production/sprockets/2902b7df0c9e35fa9198cceb3b3001c3):
+     6:   <title><%= [@page_title, render_or_call_method_or_proc_on(self, ActiveAdmin.application.site_title)].compact.join(" | ") %></title>
+     7: 
+     8:   <% ActiveAdmin.application.stylesheets.each do |style, options| %>
+     9:     <%= stylesheet_link_tag style, options %>
+    10:   <% end %>
+    11:   <% ActiveAdmin.application.javascripts.each do |path| %>
+    12:     <%= javascript_include_tag path %>
+
+
+
+
+Solution >> Run rake tmp:cache:clear to clear the cache before asset precompile
