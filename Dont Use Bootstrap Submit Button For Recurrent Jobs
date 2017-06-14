@@ -1,0 +1,4 @@
+Dont Use Bootstrap Submit Button For Recurrent Jobs
+
+> In Auction App, I used Submit Button To Place Bids, What happended was the state changed to unclickable. Use a Button class instead
+f.button in form not f.submit
